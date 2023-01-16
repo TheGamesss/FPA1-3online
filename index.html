@@ -1,0 +1,83 @@
+<html><head>
+    <style>
+    .info { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
+    body { text-align:center; background:#00DDFF; }
+    </style>
+    </head>
+    <body>
+    
+    
+    <h1>FPA 1-3 online!</h1>
+    
+    
+    <br><br>
+    <button id="myBtn0" onclick="clk0()">Open Menu</button><br><br>
+    
+    
+    <br><br>
+    <button id="myBtn1" disabled="true" onclick="clk1()">World: 1</button>
+    <button id="myBtn2" disabled="true" onclick="clk2()">World: 2</button>
+    <button id="myBtn3" disabled="true" onclick="clk3()">World: 3</button><br><br>
+    <button id="myBtn4" disabled="true" onclick="clk4()">⏏</button>
+    
+    
+    <script>
+    function clk0() {
+      alert('Special thanks to Jolver (JT) for the help and support on this project. Please enjoy! -TheGamesss')
+      document.getElementById("myBtn0").textContent = "Open Menu";
+      document.getElementById("info").textContent = "Click any of the enabled buttons to play the game.";
+      document.getElementById("myBtn0").disabled = true;
+      document.getElementById("myBtn1").disabled = false;
+      document.getElementById("myBtn2").disabled = false;
+      document.getElementById("myBtn3").disabled = false;
+    }
+    </script>
+    
+    <script>
+    function clk1() {
+      document.getElementById("myBtn1").disabled = true;
+      document.getElementById("myBtn2").disabled = true;
+      document.getElementById("myBtn3").disabled = true;
+      document.getElementById("myBtn4").disabled = false;
+      myWindow = window.open('bit.ly/3XzqTw4')
+    }
+    </script>
+    
+    <script>
+    function clk2() {
+      document.getElementById("myBtn1").disabled = true;
+      document.getElementById("myBtn2").disabled = true;
+      document.getElementById("myBtn3").disabled = true;
+      document.getElementById("myBtn4").disabled = false;
+      myWindow = window.open('bit.ly/3kjZ9NB')
+    }
+    </script>
+    
+    <script>
+    function clk3() {
+      document.getElementById("myBtn1").disabled = true;
+      document.getElementById("myBtn2").disabled = true;
+      document.getElementById("myBtn3").disabled = true;
+      document.getElementById("myBtn4").disabled = false;
+      myWindow = window.open('bit.ly/3Xl103q')
+    }
+    </script>
+    
+    <script>
+    function clk4() {
+      myWindow.close();
+      document.getElementById("myBtn4").disabled = true;
+      document.getElementById("myBtn1").disabled = false;
+      document.getElementById("myBtn2").disabled = false;
+      document.getElementById("myBtn3").disabled = false;
+    }
+    </script>
+    
+    
+    <p id="info">Click the "Open Menu" button to view the first 3 "Fancy Pants Adventures" games in HTML.</p>
+    
+    
+    
+    
+    
+    </body></html>
